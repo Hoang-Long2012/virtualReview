@@ -2,6 +2,7 @@
 
 ## Information
 * Authors: Rui Fontes, Rui Batista and NVDA Addon Team
+
 * NVDA compatibility: 2019.3 and beyond
 
 ## Presentation
@@ -11,5 +12,4 @@ Note, however, that this is just a convenience for users and does not replace NV
 ## Usage
 Press NVDA+control+w to open the virtual revision Window.
 Then simply navigate the shown textbox as you do in any other text content.
-You can press Escape to close the virtual revision window.
-
+You can press Escape or click close to close the virtual revision window.
