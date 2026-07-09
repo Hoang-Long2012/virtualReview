@@ -63,6 +63,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	@scriptHandler.script(
 		# Translators: Message presented in input help mode.
 		description=_("Opens a window containing the text of the currently focused window for easy review."),
+		category=scriptCategory,
 		gesture="kb:nvda+control+w"
 	)
 	def script_virtualWindowReview(self, gesture):
@@ -99,7 +100,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				# Translators: The title of the virtual review window when the foreground window has no name, commonly seen when all windows are minimized.
 				name = _("No title")
 			# Translators: Title of the window shown for reading text on screen via a window.
-			ui.browseableMessage(text, title=_("Virtual review: {screenName}").format(screenName = name))
+			ui.browseableMessage(text, title=_("Virtual review: {screenName}").format(screenName = name), copyButton=True, closeButton=True)
 		else:
 			# Translator: Message shown when no text can be virtualized.
 			ui.message(_("No text to display"))
